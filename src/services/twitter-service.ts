@@ -1,13 +1,14 @@
 import axios from 'axios'
 
+const baseUrl = 'https://raulramosjr.com/api'
+
 export default {
     async getTrending(){
-        console.log('gettrending');
         let res = await axios({
             method: 'get',
-            url: 'http://localhost:3000/trending'
+            url: `${baseUrl}/trending`
         });
-        console.log(res.data);
-        return res.data;
+        
+        return res.data[0];
     }
 }

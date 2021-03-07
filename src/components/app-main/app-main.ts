@@ -4,8 +4,8 @@ export default {
     name: 'AppMain',
     data() {
         return {
-            msg: 'hello world!',
-            data: {}
+            trendName: null,
+            trends: null
         }
     },
     beforeMount() {
@@ -13,10 +13,9 @@ export default {
     }, 
     methods: {
         async getTrendingData(){
-            console.log('gettrendingdata');
-            const { data } = await TwitterService.getTrending();
-            // this.$set(this, "data", data);
-            this.data = data;
+            const data = await TwitterService.getTrending();
+            this.$set(this, "trendName", data.locations[0].name);
+            this.$set(this, "trends", data.trends);
         }
     }
 }
