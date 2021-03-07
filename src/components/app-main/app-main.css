@@ -1,0 +1,11 @@
+#main {
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+    height: 100vh;
+}
+
+.nav-item{
+    color: rgb(110, 118, 125)  !important;
+    fill:currentColor;
+    /* border-bottom: none; */
+}
