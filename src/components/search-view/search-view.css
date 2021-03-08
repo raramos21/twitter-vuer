@@ -1,0 +1,82 @@
+.tweet-item {
+    border-bottom: 1px solid rgb(47, 51, 54);
+
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    cursor: pointer;
+}
+
+.tweet-profile-image {
+    border-radius: 9999px;
+    box-shadow: rgb(0 0 0 / 2%) 0px 0px 2px inset;
+    border-color: rgba(0, 0, 0, 0.04);
+    border-width: 1px;
+    transition-duration: 0.2s;
+}
+
+.tweet-name {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(217, 217, 217);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+}
+
+.tweet-text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(217, 217, 217);
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-wrap: break-word;
+    position: absolute;
+    height: 50px;
+    /* display:flex; */
+
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* display: inline-block; */
+}
+
+.profile-image-col {
+    padding-left: 10px;
+}
+
+.comments-icon {
+    height: 19px;
+    width: 19px;
+    color: rgb(110, 118, 125);
+    fill: currentColor;
+}
+
+.tweet-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.8s;    
+}
+
+.stat-row {
+    padding-top: inherit;
+}
+
+.stat-col {
+    display: inline-flex;
+}
+
+.stat-text {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    display: inline-flex;
+    margin-top: 4px;
+    margin-left: 10px;
+}

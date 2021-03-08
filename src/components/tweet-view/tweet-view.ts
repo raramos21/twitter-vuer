@@ -1,6 +1,6 @@
 export default {
-    name: 'AppMain',
-    data() {
+    name: 'TweetView',
+    data () {
         return {
         }
     }
