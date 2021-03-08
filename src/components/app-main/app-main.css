@@ -65,7 +65,7 @@ hr {
 }
 
 .tab-title-class {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
     font-size: 15px;
     font-weight: 700;
     
@@ -76,6 +76,11 @@ hr {
     border-top: none !important;
     color: rgb(110, 118, 125) !important;
     color: rgba(29,161,242,1.00) !important;
+}
+
+.tab-title-class:hover {
+    background-color: #021019 !important;
+    transition-duration: 0.5s;  
 }
 
 .nav-tabs {

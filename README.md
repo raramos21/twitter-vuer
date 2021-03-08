@@ -1,5 +1,11 @@
 # twitter-vuer
 
+A simple vue project; displays twitter trends and search tweets.
+
+[Demo](http://raulramosjr.com/twitter)
+
+
+
 ## Project setup
 ```
 npm install
