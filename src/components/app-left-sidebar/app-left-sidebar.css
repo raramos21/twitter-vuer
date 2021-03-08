@@ -8,7 +8,8 @@
     padding-bottom: 10px;
     padding-right: 15px;
     padding-left: 10px;
-
+    margin-bottom: 2px;
+    border-radius: 25px;
     /* background-color: #021019; */
     /* border-radius: 25px; */
     /* margin-bottom: 2px; */
@@ -25,7 +26,7 @@
 
     display: inline-block; 
     color:  #ffffff;
-    fill: currentColor
+    /* fill: currentColor */    
 }
 
 .twitter-logo-icon {
@@ -46,10 +47,7 @@
     fill: currentColor;
     padding: 12px;
 
-    /* background-color: #021019;
-    border-radius: 25px;
-    margin-bottom: 2px;
-    padding-bottom: 0px; */
+    
 }
 
 .first-item {
@@ -58,10 +56,18 @@
 
 .active {
     color: rgba(29,161,242,1.00) !important;
-    fill:currentColor;
 }
 
-/* .sidebar-link {
-    padding-top: 3px;
-    padding-bottom:
-} */
+.sidebar-link:hover {
+    background-color: #021019;
+    
+    cursor: pointer;
+    transition-duration: 0.5s;    
+    color: rgba(29,161,242,1.00) !important;
+    /* padding-bottom: 0px;  */
+}
+
+.sidebar-link:hover .twitter-icon {
+    color: rgba(29,161,242,1.00) !important;
+    transition-duration: 0.3s;    
+}

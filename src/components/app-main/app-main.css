@@ -12,6 +12,8 @@
     font-size: 19px;
     color: rgb(217, 217, 217);
     padding-left: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
 hr {
@@ -34,7 +36,7 @@ hr {
 }
 
 .trending-item {
-    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
     /* border-bottom: 1px solid rgb(47, 51, 54); */
 
     padding-bottom: 12px;
@@ -42,6 +44,14 @@ hr {
 
     padding-left: 16px;
     padding-right: 16px;
+    
+    cursor: pointer;
+}
+
+.trending-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.8s;    
 }
 
 .trending-item-title {
@@ -54,8 +64,20 @@ hr {
     padding-bottom: 2px;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    background-color: none !important;
-    border-color: none !important;
+.tab-title-class {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-size: 15px;
+    font-weight: 700;
+    
+    background-color: #000000 !important;
+    border-bottom: 3px solid rgba(29,161,242,1.00) !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
     color: rgb(110, 118, 125) !important;
+    color: rgba(29,161,242,1.00) !important;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid rgb(47, 51, 54);;
 }
